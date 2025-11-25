@@ -4,6 +4,7 @@ const logger = require('./logger');
 const connectDB = async () => {
   try {
     const uri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/mern_blog';
+    console.log('Attempting to connect to MongoDB...');
 
     const conn = await mongoose.connect(uri, {
       useNewUrlParser: true,

@@ -11,6 +11,7 @@ const categoriesRoutes = require('./routes/categories');
 const errorHandler = require('./middleware/errorHandler');
 
 dotenv.config();
+console.log('Starting server...');
 const app = express();
 
 // Security middleware
