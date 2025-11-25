@@ -54,5 +54,6 @@ connectDB().then(() => {
 }).catch(err => {
   logger.error('Failed to connect to DB', err);
   console.error('Failed to connect to DB:', err.message);
+  console.log('Exiting due to DB connection failure');
   process.exit(1);
 });
